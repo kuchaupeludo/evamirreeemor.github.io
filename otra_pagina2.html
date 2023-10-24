@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>queressermichurrumina</title>
+  <style>
+    body {
+      background-color: #f1d7ff;
+    }
+    .phone-frame {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    .phone-image {
+      width: 40%;
+      height: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .button {
+      background-color: #FF69B4; /* Rosa más claro */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 2cm;
+      margin-top: 10px;
+    }
+  </style>
+  <script>
+    function accionParaCuandoEllaDigaQueSi() {
+      alert("TE RE AMO NEGRAAAAHHA GRACIAS POR HACERME TAN BIENN GOGOGOO😘😍💗🩷🥰🫵🫵");
+    }
+
+    function mueveElBoton() {
+      width = window.innerWidth;
+      height = window.innerHeight;
+
+      newWidth = Math.random() * width;
+      newHeight = Math.random() * height;
+
+      document.getElementById("btnNo").style.position = "absolute";
+      document.getElementById("btnNo").style.left = newWidth + "px";
+      document.getElementById("btnNo").style.top = newHeight + "px";
+    }
+  </script>
+</head>
+<body>
+  <div class="phone-frame">
+    <p style="color: #a87bc7; font-family: 'Comic Sans MS', bold; text-shadow: 2px 2px 4px #734a91; font-size: 24px;">querés ser mi chakalita😍?</p>
+    <div class="button-container">
+      <input type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" value="Si" />
+      <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="No" />
+    </div>
+  </div>
+</body>
+</html>

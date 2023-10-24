@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>cargando...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f3d9ff;
+        }
+        .phone-image {
+            width: 60%;
+            height: 60%;
+        }
+        
+        .phone-image2 {
+            width: 45%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img class="phone-image" src="cargando.gif">
+    <img class="phone-image2" src="cargando-logo.gif">
+    
+    <script>
+    // Simula un tiempo de carga
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            // Redirige a la otra página después de 4 segundos
+            window.location.href = 'INGRESACONTRASEÑA.html';
+        }, 4000);
+    });
+    </script>
+</body>
+</html>
